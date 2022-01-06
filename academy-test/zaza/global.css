@@ -1,0 +1,13 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #211e25;
+	color: white;
+	transition: background 1s;
+	font-family: sans-serif;
+	/*line-height: 1.2em;*/
+}

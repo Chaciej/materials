@@ -1,0 +1,470 @@
+{
+  ".svelte-kit/build/runtime/internal/start.js": {
+    "file": "start-50b46388.js",
+    "src": ".svelte-kit/build/runtime/internal/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_preload-helper-1abf705a.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/build/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/o-projekcie.svelte",
+      "src/routes/przedmioty/matematyka_copy.svelte",
+      "src/routes/przedmioty/fizyka_copy.svelte",
+      "src/routes/przedmioty/informatyka.svelte",
+      "src/routes/przedmioty/matematyka.svelte",
+      "src/routes/przedmioty/angielski.svelte",
+      "src/routes/przedmioty/geografia.svelte",
+      "src/routes/przedmioty/biologia.svelte",
+      "src/routes/przedmioty/historia.svelte",
+      "src/routes/przedmioty/plastyka.svelte",
+      "src/routes/przedmioty/przyroda.svelte",
+      "src/routes/przedmioty/chemia.svelte",
+      "src/routes/przedmioty/fizyka.svelte",
+      "src/routes/przedmioty/muzyka.svelte",
+      "src/routes/przedmioty/polski.svelte",
+      "src/routes/przedmioty/linki.svelte",
+      "src/routes/exercises.svelte",
+      "src/routes/materials.svelte",
+      "src/routes/the-world.svelte",
+      "src/routes/podstawy.svelte",
+      "src/routes/fiction.svelte",
+      "src/routes/blog.svelte",
+      "src/routes/test.svelte",
+      "src/routes/[przedmiot].svelte"
+    ],
+    "css": [
+      "assets/start-fef8880c.css"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-e4729bf6.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-f4ec5702.css"
+    ]
+  },
+  ".svelte-kit/build/components/error.svelte": {
+    "file": "error.svelte-64e53a4a.js",
+    "src": ".svelte-kit/build/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-4801e2bd.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_dom-functions-06c82461.js",
+      "_navbar-e8478e32.js",
+      "_defer-image-8e47a165.js",
+      "_preload-helper-1abf705a.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-89b98a4e.css",
+      "assets/app-73a42709.css",
+      "assets/animate-3bef1da3.css"
+    ]
+  },
+  "src/routes/o-projekcie.svelte": {
+    "file": "pages/o-projekcie.svelte-214db474.js",
+    "src": "src/routes/o-projekcie.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_defer-image-8e47a165.js",
+      "_navbar-e8478e32.js",
+      "_preload-helper-1abf705a.js"
+    ],
+    "css": [
+      "assets/pages/o-projekcie.svelte-268357d0.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/matematyka_copy.svelte": {
+    "file": "pages/przedmioty/matematyka_copy.svelte-f1f8926b.js",
+    "src": "src/routes/przedmioty/matematyka_copy.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/matematyka_copy.svelte-8026f932.css"
+    ]
+  },
+  "src/routes/przedmioty/fizyka_copy.svelte": {
+    "file": "pages/przedmioty/fizyka_copy.svelte-b0c91dfe.js",
+    "src": "src/routes/przedmioty/fizyka_copy.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/fizyka_copy.svelte-64cc7069.css"
+    ]
+  },
+  "src/routes/przedmioty/informatyka.svelte": {
+    "file": "pages/przedmioty/informatyka.svelte-8f07537a.js",
+    "src": "src/routes/przedmioty/informatyka.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/biologia.svelte-d316bd6c.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/matematyka.svelte": {
+    "file": "pages/przedmioty/matematyka.svelte-f8a98e22.js",
+    "src": "src/routes/przedmioty/matematyka.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/matematyka.svelte-c122fcc0.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/angielski.svelte": {
+    "file": "pages/przedmioty/angielski.svelte-92c4e803.js",
+    "src": "src/routes/przedmioty/angielski.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ]
+  },
+  "src/routes/przedmioty/geografia.svelte": {
+    "file": "pages/przedmioty/geografia.svelte-4c2d6b6f.js",
+    "src": "src/routes/przedmioty/geografia.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/biologia.svelte-d316bd6c.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/biologia.svelte": {
+    "file": "pages/przedmioty/biologia.svelte-d4b8325f.js",
+    "src": "src/routes/przedmioty/biologia.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/biologia.svelte-d316bd6c.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/historia.svelte": {
+    "file": "pages/przedmioty/historia.svelte-dbd600a4.js",
+    "src": "src/routes/przedmioty/historia.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/biologia.svelte-d316bd6c.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/plastyka.svelte": {
+    "file": "pages/przedmioty/plastyka.svelte-68f40a66.js",
+    "src": "src/routes/przedmioty/plastyka.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ]
+  },
+  "src/routes/przedmioty/przyroda.svelte": {
+    "file": "pages/przedmioty/przyroda.svelte-d085c415.js",
+    "src": "src/routes/przedmioty/przyroda.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/biologia.svelte-d316bd6c.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/chemia.svelte": {
+    "file": "pages/przedmioty/chemia.svelte-bd4303a0.js",
+    "src": "src/routes/przedmioty/chemia.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/biologia.svelte-d316bd6c.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/fizyka.svelte": {
+    "file": "pages/przedmioty/fizyka.svelte-6bcf158f.js",
+    "src": "src/routes/przedmioty/fizyka.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/biologia.svelte-d316bd6c.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/muzyka.svelte": {
+    "file": "pages/przedmioty/muzyka.svelte-2bbbeb66.js",
+    "src": "src/routes/przedmioty/muzyka.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ]
+  },
+  "src/routes/przedmioty/polski.svelte": {
+    "file": "pages/przedmioty/polski.svelte-8a4eaf88.js",
+    "src": "src/routes/przedmioty/polski.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_prepare-gov-link-90dbdaf1.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/biologia.svelte-d316bd6c.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/przedmioty/linki.svelte": {
+    "file": "pages/przedmioty/linki.svelte-a5c3ad9d.js",
+    "src": "src/routes/przedmioty/linki.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_navbar-e8478e32.js",
+      "_preload-helper-1abf705a.js"
+    ],
+    "css": [
+      "assets/pages/przedmioty/linki.svelte-f53f994f.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/exercises.svelte": {
+    "file": "pages/exercises.svelte-4ba23776.js",
+    "src": "src/routes/exercises.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ],
+    "css": [
+      "assets/pages/exercises.svelte-0054e995.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/materials.svelte": {
+    "file": "pages/materials.svelte-2eb58dd2.js",
+    "src": "src/routes/materials.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-1abf705a.js",
+      "_vendor-8627cf08.js",
+      "_navbar-e8478e32.js",
+      "_defer-image-8e47a165.js",
+      "_dom-functions-06c82461.js"
+    ],
+    "dynamicImports": [
+      "../../node_modules/svelte-scrollto/src/index.js"
+    ],
+    "css": [
+      "assets/pages/materials.svelte-b00c12e2.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/the-world.svelte": {
+    "file": "pages/the-world.svelte-20fbdb7d.js",
+    "src": "src/routes/the-world.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ],
+    "css": [
+      "assets/pages/the-world.svelte-cd756855.css"
+    ]
+  },
+  "src/routes/podstawy.svelte": {
+    "file": "pages/podstawy.svelte-b59dd047.js",
+    "src": "src/routes/podstawy.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-1abf705a.js",
+      "_vendor-8627cf08.js",
+      "_navbar-e8478e32.js"
+    ],
+    "dynamicImports": [
+      "../../node_modules/svelte-scrollto/src/index.js"
+    ],
+    "css": [
+      "assets/pages/podstawy.svelte-db2fa23e.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/fiction.svelte": {
+    "file": "pages/fiction.svelte-5b174119.js",
+    "src": "src/routes/fiction.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ],
+    "css": [
+      "assets/pages/fiction.svelte-04688081.css"
+    ]
+  },
+  "src/routes/blog.svelte": {
+    "file": "pages/blog.svelte-8230bcbb.js",
+    "src": "src/routes/blog.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js",
+      "_navbar-e8478e32.js",
+      "_defer-image-8e47a165.js",
+      "_preload-helper-1abf705a.js"
+    ],
+    "css": [
+      "assets/pages/blog.svelte-58a27df6.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "src/routes/test.svelte": {
+    "file": "pages/test.svelte-60a73c4d.js",
+    "src": "src/routes/test.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ],
+    "css": [
+      "assets/pages/test.svelte-c62397a6.css",
+      "assets/app-73a42709.css",
+      "assets/animate-3bef1da3.css"
+    ]
+  },
+  "src/routes/[przedmiot].svelte": {
+    "file": "pages/_przedmiot_.svelte-179ea710.js",
+    "src": "src/routes/[przedmiot].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-1abf705a.js",
+      "_vendor-8627cf08.js",
+      "_navbar-e8478e32.js"
+    ],
+    "dynamicImports": [
+      "src/routes/przedmioty/angielski.svelte",
+      "src/routes/przedmioty/biologia.svelte",
+      "src/routes/przedmioty/chemia.svelte",
+      "src/routes/przedmioty/fizyka.svelte",
+      "src/routes/przedmioty/fizyka_copy.svelte",
+      "src/routes/przedmioty/geografia.svelte",
+      "src/routes/przedmioty/historia.svelte",
+      "src/routes/przedmioty/informatyka.svelte",
+      "src/routes/przedmioty/linki.svelte",
+      "src/routes/przedmioty/matematyka.svelte",
+      "src/routes/przedmioty/matematyka_copy.svelte",
+      "src/routes/przedmioty/muzyka.svelte",
+      "src/routes/przedmioty/plastyka.svelte",
+      "src/routes/przedmioty/polski.svelte",
+      "src/routes/przedmioty/przyroda.svelte"
+    ],
+    "css": [
+      "assets/pages/_przedmiot_.svelte-13e4177f.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "_vendor-8627cf08.js": {
+    "file": "chunks/vendor-8627cf08.js"
+  },
+  "_preload-helper-1abf705a.js": {
+    "file": "chunks/preload-helper-1abf705a.js"
+  },
+  "_dom-functions-06c82461.js": {
+    "file": "chunks/dom-functions-06c82461.js"
+  },
+  "_navbar-e8478e32.js": {
+    "file": "chunks/navbar-e8478e32.js",
+    "imports": [
+      "_preload-helper-1abf705a.js",
+      "_vendor-8627cf08.js"
+    ],
+    "dynamicImports": [
+      "../../node_modules/svelte-scrollto/src/index.js"
+    ],
+    "css": [
+      "assets/navbar-979333bc.css",
+      "assets/app-73a42709.css"
+    ]
+  },
+  "_defer-image-8e47a165.js": {
+    "file": "chunks/defer-image-8e47a165.js",
+    "imports": [
+      "_vendor-8627cf08.js"
+    ],
+    "css": [
+      "assets/defer-image-4269bd70.css"
+    ]
+  },
+  "_prepare-gov-link-90dbdaf1.js": {
+    "file": "chunks/prepare-gov-link-90dbdaf1.js"
+  },
+  "../../node_modules/svelte-scrollto/src/index.js": {
+    "file": "chunks/index-97c7ba2c.js",
+    "src": "../../node_modules/svelte-scrollto/src/index.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8627cf08.js"
+    ]
+  }
+}
