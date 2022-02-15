@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="pl">
+<!-- Linkowanie zewnętrznego CSS -->
+<!-- Aj Frejmy -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Refka HTMLa</title>
+	<style>
+
+		html {
+			background-color: #2d3a48;
+			color: #d7dfdf;
+			font-family: sans-serif;
+			scroll-behavior: smooth;
+		}
+		body {
+			max-width: 640px;
+			margin: auto;
+		}
+
+		img { max-width: 100% }
+		p { padding: 0 10px; }
+		button { border: none; }
+		footer { padding: 20px; background: rgba(0,0,0,0.2) }
+		a,a:visited { color: chocolate }
+		a:hover { color: #de8e54 } a:active { color: #deb054
+															 }
+		/* KLASY i "ułatwiacze" */
+		/*.fajny { background: blue; }*/
+		/*.czarny { color: black; }*/
+		
+		.hl { color: #ffd940 } .hlb { color: #ffaf40 }
+		.hl2 { color: #40ffd2 } .hl2b { color: #40c3ff }
+	 	.light { color: #8999b5 }  .lighter { color: #607eb3}  .grayed { opacity: .5 }
+		.mono { font-family: monospace }
+		.important { color: #ff6d96 }
+		.active { background: #f6d458; }
+		.text-center { text-align: center }
+		.medium-text { font-size: 24px } .big-text { font-size: 36px }
+		.html-tag:before { content: '<'; color: deepskyblue; font-weight: 700; margin: 3px; }
+		.closed-tag:before  { content: '</'; color: deepskyblue; font-weight: 700; }
+		.html-tag:after, .closed-tag:after  { content: '>'; color: deepskyblue; font-weight: 700; margin: 3px; }
+		.padding-5 { padding: 5px } .padding-10 { padding: 10px }
+		.spoiler { overflow: hidden; height: 0; transition: height .5s; visibility: hidden;
+			background-color: rgba(0,0,0,0.2); }
+		.shaded-bg { background-color: rgba(0,0,0,0.2); } .shaded-bg2 { background-color: rgba(0,0,0,0.3); }
+		
+		.flex { display: flex }
+		.flex-center { justify-content: center; align-content: center }
+		.underline { text-decoration: underline }
+		.table { display: table }
+		.block { display: block }
+		.inline-block { display: inline-block }
+		.margin-auto { margin: auto } .margin-5 { margin: 5px } .margin-10 { margin: 10px }
+		.big-list { font-size: 36px; }
+	</style>
+</head>
+<body>
+<h1 id="heder" style="text-align: center">Referencja</h1>
+
+
+<svg style="fill: white; max-width: 250px; margin: auto; display: block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<title>HTML5 Logo</title>
+	<path d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"/>
+	<path fill="#e44d26" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"/>
+	<path fill="#f16529" d="M256 480.5V131H404.3L376 447"/>
+	<path fill="#ebebeb" d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"/>
+	<path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"/>
+</svg>
+
+<p><strong>Witaj - tutaj dokładnie nauczę cię jak pisać HTMLa i łączyć go z <span class="hl">CSS (językiem stylów)</span></strong></p>
+
+<button style="position:fixed ;top:0;right:0;">Jestem zawsze tu!</button>
+
+<p>HTML jest tylko szkieletem strony, sam w sobie niewiele może ale dzięki CSS będzie ładnie wyglądał a dzięki Javascript dodatkowo robił magiczne rzeczy.</p>
+
+<p>Jedyne co muszisz wiedzieć o HTMLu to znać kilka podstawowych elementów, inaczej tagów HTMLa lub na polskie "znaczników" znaczących fragmenty strony jako coś konkretnego np. to jest akapit a tam będzie lista. Zacznijmy od tego jak używać tagów</p>
+
+<div style="font-size: 48px; text-align: center">&lt;element&gt; <span class="hl">treść</span> &lt;/element&gt;</div>
+
+<p>Jak widzicie element składa się z 2 bloków - otwierającego <span>&lt;coś&gt;</span> i domykającego <span>&lt;/coś&gt;</span> ze "slashem" <span style="color: deepskyblue; font-weight: 700;">/</span> tuż przed nazwą ale po &lt;</p>
+
+<p>"element" w powyższym przykładzie to nazwa elementu, oczywiście nie ma takiego znacznika w HTMLu jak "element" ale istnieje cała lista użytecznych elementów z jakich będziemy korzystać, oto niektóre z nich:
+
+<div class="text-center">
+	<span class="big-text">&lt;h1&gt;</span>
+<!--	<span class="big-text">h2</span>-->
+<!--	<span class="big-text">h3</span><span class="big-text">...</span>-->
+</div>
+
+<p><strong>heading</strong> - inaczej nagłówek lub tytuł, można używać od h1 do h6, im dalej tym staje się mniej ważny np. <span>h3</span> jest mniej ważny od <span>h1</span> i domyślnie też wyświetli się mniejszy</p>
+
+<div class="text-center">
+	<span class="medium-text">&lt;h1&gt;</span>
+	<span class="medium-text">Tytuł główny</span>
+	<span class="medium-text">&lt;/h1&gt;</span>
+</div>
+<br>
+<div class="text-center">
+	<span class="medium-text">&lt;h2&gt;</span>
+	<span class="medium-text">Podtytuł</span>
+	<span class="medium-text">&lt;/h2&gt;</span>
+</div>
+<br>
+
+<div class="text-center padding-5" style="background: rgba(0,0,0,0.2);">
+	<h3>To jest tekst h3</h3>
+	<h1>A tutaj h1</h1>
+</div>
+<p>Sprawdź w konsoli jak nie wierzysz (F12 lub Ctrl+Shift+C i namierz element)</p>
+
+<div class="big-text text-center">&lt;p&gt;</div>
+<p id="dupa"><strong>paragraph</strong> - inaczej akapit, czyli blok tekstu pisanego, który zawiera pewną myśl, oddzielający inne fragmenty tekstu dla lepszego poukładania</p>
+
+<div class="text-center">
+	<span class="medium-text">&lt;p&gt;</span>
+	<span class="medium-text">Lorem ipsum dolor sit amet</span>
+	<span class="medium-text">&lt;/p&gt;</span>
+</div>
+<br>
+<div class="text-center">
+	<span class="medium-text">&lt;p&gt;</span>
+	<span class="medium-text">Consectetur adipisicing elit</span>
+	<span class="medium-text">&lt;/p&gt;</span>
+</div>
+<br>
+
+<div class="text-center">
+	<button class="padding-10" onclick="toggleElement(paragraphExample, this)">Przykład 1</button>
+	<button class="padding-10" onclick="toggleElement(paragraphExample2, this)">Przykład 2</button>
+</div>
+
+<div id="paragraphExample" class="spoiler">
+	<p>Bla bla... coś tam lala, oto jest pierwszy akapit (eng. paragraph). Akapit może zawierać tyle tekstu, ile tu napchasz, pamiętaj jednak, że powinien służyć zarówno czytelności jak i merytorycznie rodzielać fragmenty różnych myśli tekstu.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur consequatur deleniti, deserunt dolorem excepturi expedita labore laudantium, placeat quod tempora tempore totam. Consectetur esse exercitationem fugit quae tenetur voluptates.</p>
+
+	<p class="hl">Akapity automatycznie dostają margines co sprawia, że wyglądają czytelniej, to całkiem cool, choć możecie im je zabrać za pomocą CSS, albo powiększyć nawet bardziej niż h1, pytanie tylko po co 🤔</p>
+</div>
+<div id="paragraphExample2" class="spoiler">
+	<p>Kolejny przykład (to też jest akapit, czyli <span>p</span>)</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur doloremque doloribus eius, excepturi expedita fugit laborum nostrum nulla odit possimus quam quasi quod sit, tenetur unde vero voluptatum.</p>
+	<p id="niegrzecznyAkapit" style="background-color: #ff5e00; color: yellow">Jestem sobie paragrafem, faken maken ci na blachen! <button onclick="niegrzecznyAkapit.remove()">usuń typa</button></p>
+
+	<div class="text-center">
+		<button class="padding-10" onclick="toggleElement(paragraphExample3,this)">Przykład wewnątrz przykładu</button>
+	</div>
+
+	<div id="paragraphExample3" class="spoiler">
+		<p>Witaj, właśnie odkryłeś przykład ukryty w przykładzie!</p>
+	</div>
+</div>
+
+<br>
+<div class="big-text text-center">&lt;div&gt;</div>
+<p class="text-center">tzw. division - od wycinek</p>
+<p>Znacznik div znaczy... cokolwiek, dlatego będzie jednym z najczęsciej używanych elementów, służących zwykle do wydzielania fragmentów strony i grupowania treści</p>
+
+<p>W HTMLu powszechnym jest wkładanie w siebie wielu div'ów i w ten sposób zagnieżdżanie elementów (potem możemy taką grupkę np. przenieść w inne miejsce, wyrównać do lewej i każdy element w parencie będzie przemieszczał się razem z nim)</p>
+
+<div class="big-text text-center">&lt;span&gt;</div>
+<p>Span jest również wycinkiem ale bardziej tekstu niż bloku strony. Użyjemy go do oznaczania fragmentów akapitu np. do podświetlania poszczególnych partii tekstu.</p>
+<p>Różnica między div a span jest taka, że div wyświetla się jako "block" a span jest "inline", tutaj przykład w praktyce:</p>
+
+<div class="medium-text hl">Elementy typu "block"</div>
+<div>To jest pierwszy div</div>
+<div>To jest drugi div</div>
+<div>To jest trzeci div</div>
+<br>
+<div class="medium-text hl">Elementy typu "inline"</div>
+<span>To jest pierwszy span</span>
+<span>To jest drugi span</span>
+<span>To jest trzeci span</span>
+
+<p>Jak widzimy każdy div wyświetlił się w nowej linii a span dalej płynął niczym tekst</p>
+<div class=""><span class="hl">Przykładowe elementy block: </span><span class="">div, h1, p, hr</span></div>
+<div class=""><span class="hl">Przykładowe elementy inline: </span><span class="">span, img, button, input, a, li, strong</span></div>
+<br>
+<hr>
+
+<div class="text-center">
+	<h2>Czas na <span class="hl2">atrybuty</span></h2>
+	<p class="table margin-auto">Atrybuty siedzą wewnątrz elementu i nadają mu dodatkowe cechy<br>Poznajmy przy okazji 2 nowe tagi:</p>
+</div>
+
+<br>
+<div class="big-text text-center">&lt;img&gt;</div>
+<p class="text-center">Oto jest obrazek (image)</p>
+<div class="big-text text-center">&lt;a&gt;</div>
+<p class="text-center">A tutaj jest link (tzw. anchor)</p>
+<!--<br>-->
+
+<p class="text-center"><strong class="important">Dwa powyższe tagi wymagają atrybutu, żeby w ogóle działać!</strong></p>
+<p><span>Img</span> wymaga atrybutu <strong class="hl">src</strong> - inaczej source czyli adres do obrazka<br>zaś <span>a</span> wymaga <strong class="hl">href</strong> - adresu do strony, na który udamy się po kliknięciu linka ("href" znaczy tutaj http reference)</p>
+
+<p class="text-center">Zapiszemy je w następujący sposób:</p>
+
+<div class="big-text text-center">&lt;img <span class="hl2">src</span>="<span class="hl">adres</span>"&gt;</div>
+<br>
+<div class="text-center big-text">
+	<span>&lt;a <span class="hl2">href</span>="<span class="hl">adres</span>"&gt;</span>
+	<span class="">kliknij mnie</span>
+	<span>&lt;/a&gt;</span>
+</div>
+
+<br>
+<p>Jak widzicie wartość atrybutu jest zawsze w cudzysłowiu np. <span class="hl2">atrybut</span>="<span class="hl">wartość</span>"</p>
+
+<div class="medium-text text-center">&lt;img <span class="hl2">src</span>="<span class="hl mono">obrazki/moje/ja-na-plazy.jpg</span>"&gt;</div>
+<p>Powyższy adres próbuje wczytać obrazek bezpośrednio z dysku</p>
+<p class="light">Zauważcie że spacje są zastąpione myślnikami i raczej nie chcemy używać polskich znaków w nazwach plików</p>
+<div class="text-center">&lt;img <span class="hl2">src</span>="<span class="hl mono">https://superwarsztaty.pl/sw-main/images/kroung.jpg</span>"&gt;</div>
+<p>Jeśli w adresie jest <span class="hl">https://</span> to prawdopodobnie wczytujemy go z serwera w internecie</p>
+
+<p class="light">Możecie skopiować adres do dowolnego obrazka w internecie klikając na niego prawym a następnie "kopiuj adres obrazka" lub w angielskiej wersji "copy image address"</p>
+
+<img src="https://superwarsztaty.pl/sw-main/images/kroung.jpg">
+
+<p class="medium-text important text-center">Uwaga, tag <strong class="hl">img</strong> nie posiada elementu domykającego <span>&lt;/img&gt;</span></p>
+<p class="important">I nie tylko on, inne elementy bez domknięcia to: &lt;br&gt;, &lt;hr&gt;, &lt;input&gt;, &lt;link&gt;, &lt;meta&gt;</p>
+
+<p class="light">W sumie to zdaje się rozsądne, co miałoby siedzieć w obrazku, skoro to jego atrybut src decyduje o tym, co jest ściągane i potem wyświetlane, tylko miejsce w którym umieszczono znacznik powinno mieć znaczenie.</p>
+
+
+<h2 class="text-center">LINKI czyli &lt;a&gt;</h2>
+<p>Zacznijmy od tego, że tagu &lt;a&gt; możemy używać jako indeksu na stronie! Nie musimy od razu udawać się gdzieś w zakątki internetu 🌐</p>
+
+<div class="text-center margin-5">
+	<a class="margin-5 inline-block" href="#heder">Początek strony!</a>
+	<br>
+	<a class="margin-5 inline-block" href="#futer">Leć na koniec strony!</a>
+	<br>
+	<a class="margin-5 inline-block" href="#dupa">Leć do elementu o ID="dupa"</a>
+</div>
+
+<p class="hl">W HTMLu wygląda to tak:</p>
+<div class="text-center shaded-bg padding-10">
+	<p class="margin-5">&lt;a href=&quot;<span class="hl">#heder</span>&quot;&gt;<span class="light">Początek strony!</span>&lt;/a&gt;</p>
+	<p class="margin-5">&lt;a href=&quot;<span class="hl">#futer</span>&quot;&gt;<span class="light">Leć na koniec strony!</span>&lt;/a&gt;</p>
+	<p class="margin-5">&lt;a href=&quot;<span class="hl">#dupa</span>&quot;&gt;<span class="light">Leć do elementu o ID = dupa</span>&lt;/a&gt;</p>
+</div>
+
+<p class="light">Podejrzyj sobie w konsoli, nie przejmuj się klasami, służą jedynie dekoracji</p>
+
+<p>Znak # to ID elementu, do którego chcemy się przenieść i siup! Oczywiście trzeba wcześniej taki element sprecyzować:</p>
+
+<div class="text-center">
+	&lt;div <span class="hl2">id</span>="przenieś-tutaj"&gt; Treść elementu &lt;/div&gt;
+	<br>
+	a potem &lt; <span class="hl2">href</span>="#przenieś-tutaj" a&gt; Idziemy &lt;/a&gt;
+</div> 
+
+<p>W CSS możemy dodatkowo sprecyzować dla elementu html <span class="hl">scroll-behavior: smooth;</span> dla płynniejszego scrollowania strony (domyślne zachowanie to natychmiastowy przeskok)</p>
+
+<h3>Linki do Internetu</h3>
+
+<div class="shaded-bg padding-10 margin-auto flex flex-center">
+	<a class="margin-5 inline-block" href="https://google.com">Google</a>
+	<a class="margin-5 inline-block" href="https://superwarsztaty.pl">SuperWarsztaty</a>
+	<a class="margin-5 inline-block" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">NIE KLIKAJ!</a>
+</div>
+
+<hr>
+
+<h2 class="text-center">Istnieją pewne <span class="hl2">uniwersalne atrybuty</span></h2>
+<p>Uniwersalne znaczy w tym przypadku, że każdy element może je posiadać i będą znaczyć dokładnie tyle samo, np. każdy może mieć swój identyfikator czy klasę</p>
+<p class="medium-text">Są to kolejno: <strong class="hl2">id, class, title, lang, style</strong></p>
+
+<ul>
+	<li><span class="hl2">id</span>: unikalny identyfikator elementu</li>
+	<li><span class="hl2">class</span>: klasa do której obiekt może należeć</li>
+	<li><span class="hl2">title</span>: każdy element może posiadać tytuł (wyświetla się po najechaniu)</li>
+	<li><span class="hl2">lang</span>: język tekstu w elemencie, przydatny dla Gugula</li>
+	<li><span class="hl2">style</span>: wewnątrz niego piszemy CSS dla elementu, tzw. <span class="hl">inline style</span></li>
+</ul>
+
+<div class="medium-text"><span>&lt;div <span class="hl2">id</span>="zugubuludu"&gt;</span></div>
+<span class="important">Tylko 1 element może mieć to ID!</span>
+<span class="hl">Odtąd możesz robić z tym elementem następujące rzeczy:</span>
+
+<ul>
+	<li>Przewijać do niego tagiem <span>&lt;a&gt; href="#zugubuludu"</span>Idź tam <span>&lt;/a&gt;</span> (jak w indeksie)</li>
+	<li>Namierzać go w Javascript po nazwie ID bez deklarowania zmiennej!</li>
+	<li>Stylować go w CSS za pomocą #zugubuludu {style} (# oznacza tutaj ID selector, tak jak <strong class="">.</strong> oznacza klasę) -
+		<span class="important">UWAGA, nie jest to polecane o czym opowiem później</span></li>
+</ul>
+<br>
+
+<div class="medium-text"><span>&lt;div <span class="hl2">class</span>="czarny fajny do-lewej"&gt;</span></div>
+
+<p>Być może ciężko w to uwierzyć, ale powyższy element posiada aż 3 klasy CSS, są to: <span class="hl2">czarny</span>, <span class="hl2">fajny</span> i <span class="hl2">do-lewej</span>, kolejność nie ma tutaj znaczenia</p>
+
+<p>Możecie im teraz nadać dowolny wygląd w CSS stylując po klasie: <span class="hl">.nazwa-klasy</span> <span class="hl2">{nasze style}</span> (pamiętajcie o kropce, to selektor klasy, do tego pamiętajcie o średnikach rozdzielających osobne linijki)</p>
+
+<p class=""><span class="hl">Z klasą jest trochę lepiej niż z ID</span> bo 1 element może ich posiadać nawet kilka i nie ma limitu elementów posiadających konkretną klasę. Klasy możecie stylować w CSS i łapać w zmienne JS</p>
+<div class="medium-text fajny czarny"><span>&lt;div class="przycisk editable"&gt;</span></div>
+<p>Ten przycisk będzie posiadał własności zarówno klasy przycisk jak i editable</p>
+
+<h2 class="text-center">Inne opcjonalne atrybuty</span></h2>
+<ul>
+	<li><span class="hl2">name</span> - przydatny w formularzach i inputach, żeby wyznaczyć do której grupy należą i dać możliwość np. podświetlenia się okna po kliknięciu odpowiedniej rubryki (label element)</li>
+	<li><span class="hl2">width i height</span> - działa w obrazkach i ustawia rozmiar (szerokość lub wysokość) na podaną wartość, nie potrzebuje jednostek px, domyślnie je ustawi (zalecane jest jednak użycie CSS do ustalania rozmiaru)</li>
+	<li><span class="hl2">tabindex</span> - określa czy element może być zaznaczony tzw. "focused" i sekwencjonowany klawiszem "Tab" - daj 0 jeśli tego właśnie chcesz, -1 jak chcesz by był zaznaczable ale nie sekwencjonable <span class="light">(przyciski są domyślnie ale np. nie div'y)</span></li>
+<!--	<li><span class="hl2">attr</span> - blabla</li>-->
+</ul>
+
+<hr>
+<h2 class="text-center">Inne przydatne elementy</h2>
+
+<div class="text-center">
+	<span class="big-text text-center">&lt;ol&gt;</span>
+	<span class="big-text text-center">&lt;ul&gt;</span>
+	<ul></ul>
+</div>
+<p>Lista uporządkowana i nieuporządkowana: ol zawiera numerki a <span>ul</span> tylko punkciki (możesz je sobie dowolnie wystylować)</p>
+
+<div class="flex flex-center">
+	<div>
+		<div class="medium-text text-center">&lt;ol&gt;</div>
+		<ol>
+			<li>Pies</li>
+			<li>Kot</li>
+			<li>Człowiek</li>
+			<li>Dom</li>
+			<li>Huśtawka</li>
+		</ol>
+	</div>
+
+	<div>
+		<div class="medium-text text-center">&lt;ul&gt;</div>
+		<ul>
+			<li>Długopis</li>
+			<li>Ołówek</li>
+			<li>Piórnik</li>
+			<li>Książka</li>
+			<li>Stół</li>
+		</ul>
+	</div>
+</div>
+
+<p>Nie musisz używać listy za każdym razem kiedy coś wypisujesz, to twoja decyzja, pamiętaj jednak że sam tag listy oznacza w HTMLu konkretny rodzaj treści.</p>
+	<div class="big-text text-center">&lt;input&gt;</div>
+<p>Okienko do wpisywania czegoś, o takie na przykład:</p>
+<input type="text">
+<p>Input tag posiada różne typy, np. type="password" da nam zakropkowane znaki aby nikt nie podejrzał hasła</p>
+<input type="password">
+<p>Ale są jeszcze inne typy, jak np. numeryczny type="number" (możemy używać strzałek GÓRA-DÓŁ do manipulacji wartością)</p>
+<input type="number">
+<p>Mamy też typy "przyciskowe" jak type="radio" lub type="checkbox" stworzone do zakreślania</p>
+<input type="radio" name="radio-button-test">
+<input type="radio" name="radio-button-test">
+<input type="radio" name="radio-button-test">
+<span>Radio buttony zakreślają max 1 opcję per grupa (aby stworzyć grupę daj wszystkim atrybut name="nazwagrupy")</span>
+<br>
+<input id="czekboks" type="checkbox">
+<input id="czekboks2" type="checkbox">
+<input id="czekboks3" type="checkbox">
+<span>Checkboxy mogą się dowolnie zaznaczać i odznaczać, każdy indywidualnie</span>
+<p>Wszystkie z tych elementów możemy stylować w CSS!</p>
+<p class="important">Input tag, podobnie jak img również nie posiada domknięcia</p>
+
+<footer id="futer">
+	<p>Na razie to tyle, referencje HTMLa będziemy rozbudowywać z czasem, póki co oddaję w wasze ręce versję pierwszą, nazwijmy ją jakimś fancy numerkiem np. 1a</p>
+	<p>Dziękuję za przeczytanie: ❤</p>
+</footer>
+
+<script>
+	function toggleElement(el, btn) {
+		console.log(el)
+		if (btn) btn.classList.toggle('active')
+		if (!el.isExpanding) { expandSection(el); el.isExpanding = true
+			console.log('expanding')
+		} else { collapseSection(el); el.isExpanding = false }
+	}
+	
+
+	// Moje 2 custom funkcje od płynnego rozwijania
+	// naprawdę nie musicie wiedzieć o co w nich chodzi ;)
+	// ale jak ktoś bardzo chce wiedzieć to mogę kiedyś opowiedzieć
+
+	function expandSection(element, {setToAutoAfter=true, disableOnScroll=true, overflowAfter='none', callback=(e)=>{} }={}) {
+		console.log('expand section FUNCTION')
+		let sectionHeight = element.scrollHeight
+
+		element.style.visibility = 'visible'
+		element.style.transition = `height ${.3+ element.innerText.length/5000}s`
+		console.log('innerText length', `height ${.3 + element.innerText.length/5000}s`)
+		element.style.height = sectionHeight + 'px'
+
+		element.ontransitionend = function(e) {
+			element.ontransitionend = ()=>{}
+			element.style.height = setToAutoAfter ? 'auto' : null
+			element.style.overflow = overflowAfter
+			callback(element)
+		}
+		element.setAttribute('data-collapsed', 'false')
+	}
+
+	function collapseSection(element) {
+		let sectionHeight = element.scrollHeight
+		let elementTransition = element.style.transition
+		element.style.transition = ''
+		element.ontransitionend = ()=>{
+			element.style.visibility = 'hidden'
+		}
+		requestAnimationFrame(function() {
+			element.style.height = sectionHeight + 'px'
+			element.style.transition = elementTransition
+
+			requestAnimationFrame(function() {
+				element.style.height = 0 + 'px'
+			})
+		})
+		element.setAttribute('data-collapsed', 'true')
+	}
+
+</script>
+
+</body>
+</html>
